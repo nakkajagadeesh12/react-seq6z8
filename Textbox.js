@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import Popup from './Popup';
 
 class Textbox extends React.Component {
   constructor(props) {
@@ -53,7 +54,7 @@ class Textbox extends React.Component {
           </div>
         </form>
         {
-          this.state.change ? <h6>Your order has been Rescheduled successfully</h6> : null
+          this.state.change ? <Popup /> : null
         }
         {console.log(this.state.change)}
       </div>
