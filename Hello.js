@@ -10,7 +10,7 @@ class Hello extends React.Component {
     return (
       <div className="main">
         <Header />
-        <Form1 />
+        <Form />
       </div>
     )
   }
