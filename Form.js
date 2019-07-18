@@ -41,6 +41,7 @@ class Form extends React.Component {
               value={this.state.orderId}
               onChange={this.changeHandler.bind(this)}
               placeholder="orderid"
+              required={true}
             />
           </div>
           <div style={{ marginTop: "30px" }}>
