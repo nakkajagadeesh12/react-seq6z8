@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import Popup from './Popup';
 
-class Textbox extends React.Component {
+class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -70,4 +70,4 @@ class Textbox extends React.Component {
   }
 }
 
-export default Textbox;
+export default Form;

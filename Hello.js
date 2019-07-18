@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Textbox from './Textbox';
+import Form from './Form';
 import './style.scss';
 
 class Hello extends React.Component {
@@ -9,7 +9,7 @@ class Hello extends React.Component {
     return (
       <div className="main">
         <Header />
-        <Textbox />
+        <Form />
       </div>
     )
   }
