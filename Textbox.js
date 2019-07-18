@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import Popup from 'react-popup';
+import Popup from './Popup';
 
 class Textbox extends React.Component {
   constructor(props) {
@@ -60,7 +60,7 @@ class Textbox extends React.Component {
         </form>
         {
           this.state.change ? <Popup
-            text='Close Me'
+            text='Your order has been resheduled successfully'
             closePopup={this.togglePopup.bind(this)}
           /> : null
         }

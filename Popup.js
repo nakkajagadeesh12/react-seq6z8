@@ -1,16 +1,18 @@
 import React from 'react';
-import Popup from 'react-popup';
+import './style.scss';
+
+class Popup extends React.Component {
+  render() {
+    return (
+      <div className='popup'>
+        <div className='popup_inner'>
+          <h1>{this.props.text}</h1>
+        <button onClick={this.props.closePopup}>close me</button>
+        </div>
+      </div>
+    );
+  }
+}
 
 
-export default class Popup extends React.Component{
-render(){
-  return(
-    <div>
-    {console.log("hello")}
-    <Popup 
-    text='Your order has been Rescheduled successfully'
-    />
-    </div>
-  )
-}
-}
+export default Popup;
